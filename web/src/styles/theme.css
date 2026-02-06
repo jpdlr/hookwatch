@@ -1,0 +1,67 @@
+:root {
+  color-scheme: light;
+  font-family: "IBM Plex Sans", "Inter", "Segoe UI", sans-serif;
+  --font-display: "Merriweather Sans", "IBM Plex Sans", "Segoe UI", sans-serif;
+  --font-body: "IBM Plex Sans", "Inter", "Segoe UI", sans-serif;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 44px;
+
+  --radius-s: 10px;
+  --radius-m: 16px;
+  --radius-l: 24px;
+
+  --elevation-1: 0 8px 22px rgba(23, 28, 39, 0.08);
+  --elevation-2: 0 18px 36px rgba(23, 28, 39, 0.12);
+
+  --color-bg: #f3f2ef;
+  --color-surface: #ffffff;
+  --color-surface-2: #f1efeb;
+  --color-text: #1c2027;
+  --color-muted: #5f6570;
+  --color-border: #ddd8d1;
+  --color-accent: #3f6f67;
+  --color-accent-2: #254f48;
+
+  --app-bg:
+    radial-gradient(circle at 90% 0%, rgba(196, 212, 207, 0.45), transparent 40%),
+    radial-gradient(circle at 0% 0%, rgba(228, 221, 208, 0.5), transparent 35%);
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --color-bg: #14181f;
+  --color-surface: #1c2129;
+  --color-surface-2: #232a34;
+  --color-text: #eff2f4;
+  --color-muted: #b8bec6;
+  --color-border: #2e3642;
+  --color-accent: #8dcac0;
+  --color-accent-2: #b6e9e0;
+  --elevation-1: 0 12px 26px rgba(0, 0, 0, 0.32);
+  --elevation-2: 0 20px 42px rgba(0, 0, 0, 0.42);
+  --app-bg:
+    radial-gradient(circle at 90% 0%, rgba(53, 67, 83, 0.48), transparent 45%),
+    radial-gradient(circle at 0% 0%, rgba(54, 63, 73, 0.4), transparent 40%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--app-bg), var(--color-bg);
+  color: var(--color-text);
+}
+
+button,
+input,
+select {
+  font-family: var(--font-body);
+}
